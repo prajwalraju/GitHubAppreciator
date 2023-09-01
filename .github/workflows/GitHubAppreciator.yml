@@ -32,6 +32,7 @@ jobs:
       - name: Install curl
         run : sudo apt-get install curl jq
       
+      - run: echo ${{secrets.linkedinAuth}}
       - name: Get repo about
         run : |
           # Get repo details
